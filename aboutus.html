@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LILY ANTIQUES</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="AntiQ.css">
+    <link rel="icon" type="image" href="imagesq.png">
+</head>
+<body>
+<div class="main">
+  <div class="top">
+     <img src="images.png" alt="Avatar" class="avatar">
+    <h1><i><B><u>LILY ANTIQUES</u></B></i></h1>
+
+  </div>
+        <div class="tab">
+            <a href="AntiQ.html"> <button class="tablinks">Home</button></a>
+            <a href="aboutus.html"><button class="tablinks">About Us</button></a>
+            <a href="Contact.html"><button class="tablinks">Contact us</button></a>
+            <a href="Gallery.html"><button class="tablinks">Gallery</button></a>
+            <a href="Hours.html"><button class="tablinks">Working hours</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+        </div> 
+        
+          <div class="innerright">
+            <hr>
+            <marquee behavior="" direction="left">Welcome to LILLY ANTIQUES. Happy browsing!!</marquee>
+            
+        
+         <div id="About" class="tabcontent" class="about">
+           
+          <div class="lil">
+              <form action="">
+              <fieldset>
+                  <legend><h3>About Lily Antiques</h3></legend> 
+          <img src="lily.jpg" style="width: 150px; height: 150px;">
+          <h4>
+          Established in 2015 in Uganda,  Lily Antiques Uganda LTD  specializes in tribal African art and antiquities. <br>
+          We are specialists in the traditional arts of East and Central Africa. We do business over the internet,<br> 
+          and a private gallery (by appointment) that is if you happen to be in Kampala.<br>
+
+         <b>Inspiration</b> <br>
+          My name is Kamunya Lilian Wanjiku, I have been a dealer of  tribal African art and antiquities for 05 years now. <br>
+          I specialize in Congo, Tanzania, Uganda, Kenya and South Sudan but also minimum artifacts from Rwanda and Burundi.<br> 
+          I found myself growing an interest in this trade as a result; <br>
+          I developed a passion for tribal art after curating in a contemporary art gallery <br>
+          TULIFANYA GALLERY for numerous years after a while I decided to specialize in old  <br>
+          field collected pieces, for those curious, collecting or dealers and are all welcome by <br>
+          APPOINTMENT on our humble gallery on GAYAZA ROAD   8 miles from city centre of kampala, <br>
+
+          Over the years of my field  trips I  have accumulated  quite a collection, <br>
+          I am still thrilled  by my extensive network of a local field collectors in the  region. <br>
+          Of Kenya, Uganda, Sudan and the Congo,  what sometimes they  find. <br>
+
+          </h4>
+        </fieldset>
+        </form>
+          </div> 
+        
+        
+         </div> 
+        </div>
+     
+         
+        
+       
+        <div id="id01" class="modal">
+  
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                   <div class="imgcontainer">
+                     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img src="images.jfif" alt="Avatar" class="avatar">
+                    </div>
+     
+                    <div class="container">
+                     <label for="uname"><b>Username</b></label>
+                     <input type="text" placeholder="Enter Username" name="uname" id="usern" required>
+     
+                     <label for="psw"><b>Password</b></label>
+                     <input type="password" placeholder="Enter Password" name="psw" id="pass" required>
+             
+                     <label>
+                     <input type="checkbox" checked="checked" name="remember">  <font color="white">Remember Me</font>
+                     </label>
+     
+                     <button type="button1" value="Login" onclick="loginfn()">Login</button>
+                     
+     
+                   <div class="container">
+                     <button type="button1" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                      <span class="psw">Forgot <a href="#">password?</a></span>
+                   </div>
+                 </div>
+                 </form>
+              </div> 
+
+              <hr>
+              
+              <div class="media">
+                  <h4>Talk to us!</h4>
+                <h5>&copy;2019-LILIAN</h5>
+                <img src="1.png" alt="" width="50px" height="50px">
+                <img src="twitter.png" alt="" width="50px" height="50px">
+                <img src="instagram.png" alt="" width="50px" height="50px">
+              </div>
+              
+            </div>
+  
+<script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+   </script>  
+   
+   <script>
+       function loginfn() {
+           let username=document.getElementById('usern').value;
+           let userpassword=document.getElementById('pass').value;
+
+           if(username=="client" && userpassword=="admin"){
+           window.open(AntiQ.html);
+           } else if (username==""&&userpassword==""){
+               alert("You can't submit empty fields");
+           } else {
+               alert("wrong credentials!!!")
+           }
+
+       }
+   </script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LILY ANTIQUES</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="AntiQ.css">
+    <link rel="icon" type="image" href="imagesq.png">
+</head>
+<body>
+<div class="main">
+  <div class="top">
+     <img src="images.png" alt="Avatar" class="avatar">
+    <h1><i><B><u>LILY ANTIQUES</u></B></i></h1>
+   
+  </div>
+        <div class="tab">
+            <a href="AntiQ.html"> <button class="tablinks">Home</button></a>
+            <a href="aboutus.html"><button class="tablinks">About Us</button></a>
+            <a href="Contact.html"><button class="tablinks">Contact us</button></a>
+            <a href="Gallery.html"><button class="tablinks">Gallery</button></a>
+            <a href="Hours.html"><button class="tablinks">Working hours</button></a>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+        </div> 
+        
+          <div class="innerright">
+              <hr>
+            <marquee behavior="" direction="left">
+            Welcome to LILLY ANTIQUES. Happy browsing!!
+          </marquee>
+          </div>
+       
+         <div class="tabcontent">
+          
+          <div class="about">
+          <img src="13.jpg" style="width: 1000px; height: 350px; ">
+          </div>
+          <div class="hours">
+          <h3>Working Hours</h3>
+          <ol>
+            <li>Monday - Sunday: 10am-6pm</li>
+            <li>Weekends : 10am-8pm</li>
+            <li>We are closed on Holidays...</li>
+          </ol>
+           </div>
+          
+         </div> 
+         
+         
+         <div id="id01" class="modal">
+  
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                   <div class="imgcontainer">
+                     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                      <img src="images.jfif" alt="Avatar" class="avatar">
+                    </div>
+     
+                    <div class="container">
+                     <label for="uname"><b>Username</b></label>
+                     <input type="text" placeholder="Enter Username" name="uname" id="usern" required>
+     
+                     <label for="psw"><b>Password</b></label>
+                     <input type="password" placeholder="Enter Password" name="psw" id="pass" required>
+             
+                     <label>
+                     <input type="checkbox" checked="checked" name="remember">  <font color="white">Remember Me</font>
+                     </label>
+                     
+                     <button type="button1" value="Login" onclick="loginfn()">Login</button>
+     
+                   <div class="container">
+                     <button type="button1" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                      <span class="psw">Forgot <a href="#">password?</a></span>
+                   </div>
+                 </div>
+                 </form>
+              </div>
+              <hr>
+              <div class="media">
+                  <h4>Talk to us!</h4>
+                <h5>&copy;2019-LILIAN</h5>
+                <img src="1.png" alt="" width="50px" height="50px">
+                <img src="twitter.png" alt="" width="50px" height="50px">
+                <img src="instagram.png" alt="" width="50px" height="50px">
+              </div>
+
+            </div>    
+<script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+   </script>  
+   
+   <script>
+       function loginfn() {
+           let username=document.getElementById('usern').value;
+           let userpassword=document.getElementById('pass').value;
+
+           if(username=="client" && userpassword=="admin"){
+           window.open(AntiQ.html);
+           } else if (username==""&&userpassword==""){
+               alert("You can't submit empty fields");
+           } else {
+               alert("wrong credentials!!!")
+           }
+
+       }
+   </script>
+
+</script>       
+</body>
+</html>
